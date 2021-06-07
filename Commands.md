@@ -31,7 +31,6 @@ run this command:
 **__________________________**
 
 ## **Question 4:**
- 1 - mysql + phpmyadmin
 
 we have a predefined network:
 
