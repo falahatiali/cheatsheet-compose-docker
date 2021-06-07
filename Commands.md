@@ -41,7 +41,7 @@ we have a predefined network:
 
 Answer:
 
-[04network-compose.yaml](https://github.com/falahatiali/cheatsheet-compose-docker/blob/master/03network-compose.yaml)
+[04network-compose.yaml](https://github.com/falahatiali/cheatsheet-compose-docker/blob/master/04network-compose.yaml)
 
 run this command:
 ```
