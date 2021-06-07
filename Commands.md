@@ -18,7 +18,14 @@ Answer:
 ```
 1 - cp .mysql.env.example .mysql.env
 2 - cp .phpmyadmin.env.example .phpmyadmin.env
-3 - [phpmyadmin-compose.yaml](https://github.com/falahatiali/cheatsheet-compose-docker/blob/master/phpmyadmin-compose.yaml)
+```
+click on following link to see full docker compose for running phpmyadmin and mysql
+[phpmyadmin-compose.yaml](https://github.com/falahatiali/cheatsheet-compose-docker/blob/master/phpmyadmin-compose.yaml)
+
+run this command:
+```
+1 -  docker-compose -f phpmyadmin-compose.yaml up -d
+
 ```
 
 **__________________________**
