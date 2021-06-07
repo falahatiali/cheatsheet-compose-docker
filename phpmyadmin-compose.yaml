@@ -1,0 +1,33 @@
+version: !!str 3
+ 
+services:
+  mysqldb:
+    image: mysql:8.0.21
+    container_name: mysqldb
+    env_file: .mysql.env
+    expose: 
+      - "3306"
+    ports:
+      - "3306:3306"
+    networks:
+      - database
+    volumes:
+      - dbdata:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.1.1
+    container_name: phpmyadmin
+    env_file: .phpmyadmin.env
+    networks:
+      - database
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+
+networks:
+  database:
+    name: database
+
+volumes:
+  dbdata:
+    name: dbdata
