@@ -29,3 +29,51 @@ run this command:
 ```
 
 **__________________________**
+
+## **Question 4:**
+ 1 - mysql + phpmyadmin
+
+we have a predefined network:
+
+```
+1 - docker network create mynetwork
+
+```
+
+Answer:
+
+[04network-compose.yaml](https://github.com/falahatiali/cheatsheet-compose-docker/blob/master/03network-compose.yaml)
+
+run this command:
+```
+1 -  docker-compose -f 04network-compose.yaml up -d
+
+```
+**__________________________**
+
+## **Question 5:**
+ 1 - scale service
+
+
+Answer:
+
+[05scale-compose.yaml](https://github.com/falahatiali/cheatsheet-compose-docker/blob/master/05scale-compose.yaml)
+
+run this command:
+```
+1 -  docker-compose -f 05scale-compose.yaml up --scale nginx=5 -d
+
+```
+**__________________________**
+
+
+## **Question 5:**
+ 1 - view logs
+
+
+run this command:
+```
+1 -  docker-compose -f phpmyadmin-compose.yaml logs mysqldb
+
+```
+**__________________________**
